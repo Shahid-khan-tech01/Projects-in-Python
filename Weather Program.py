@@ -179,7 +179,7 @@ class WeatherApp(QWidget):
         elif weather_id == 804:
             return "☁️"
         else:
-            return ""
+            return "🌞"
 
 
 
