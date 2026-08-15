@@ -3,8 +3,8 @@ import sys
 import requests
 from PyQt5.QtWidgets import (QApplication, QWidget, QPushButton,
                              QLabel, QLineEdit, QVBoxLayout)
-from PyQt5.QtCore import Qt, QRect
-from PyQt5.QtGui import QIcon, QPixmap
+from PyQt5.QtCore import Qt
+from PyQt5.QtGui import QPixmap
 from dotenv import load_dotenv
 
 
@@ -16,7 +16,6 @@ class WeatherApp(QWidget):
         label.setPixmap(pixmap)
         label.setScaledContents(True)
         label.setGeometry(0, 0, 500, 500)
-        self.setWindowIcon(QIcon("profile.jpg"))
         self.city_label = QLabel("Location:", self)
         self.city_input = QLineEdit(self)
         self.city_input.setPlaceholderText("Enter city name:")

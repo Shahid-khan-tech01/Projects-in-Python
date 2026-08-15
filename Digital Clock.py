@@ -3,7 +3,7 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QVBoxLayout
 from PyQt5.QtCore import QTimer, QTime, Qt
-from PyQt5.QtGui import QFont, QFontDatabase, QIcon
+from PyQt5.QtGui import QFont, QFontDatabase
 
 class DigitalClock(QWidget):
     def __init__(self):
@@ -14,7 +14,6 @@ class DigitalClock(QWidget):
 
     def initUI(self):
         self.setWindowTitle("Digital Clock")
-        self.setWindowIcon(QIcon("profile.jpg"))
         self.setGeometry(600, 400, 300, 100)
 
         vbox = QVBoxLayout()
