@@ -37,7 +37,7 @@ class Stopwatch(QWidget):
         QPushButton, QLabel {
         padding: 20px;
         background-color: black;
-        font-family: Roboto Black;
+        font-family: Arial;
         color: hsl(116, 98%, 50%);
         }
         QPushButton {
