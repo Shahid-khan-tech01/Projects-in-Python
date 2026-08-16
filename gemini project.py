@@ -5,7 +5,6 @@ from google import genai
 load_dotenv()
 api_key = os.getenv("key")
 client = genai.Client(api_key=api_key)
-# client = genai.Client(api_key="AQ.Ab8RN6Jt7-uoRDTFNaWRFdm85n8_ZHe405Ko0duhsThLHErvjA")
 
 while True:
     question = input("You: ")
