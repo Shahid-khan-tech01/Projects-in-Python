@@ -1,7 +1,7 @@
 from google import genai
 from google.genai.types import GenerateContentResponse
 
-client = genai.Client(api_key="AQ.Ab8RN6Jt7-uoRDTFNaWRFdm85n8_ZHe405Ko0duhsThLHErvjA")
+client = genai.Client(api_key="API key")
 
 while True:
     question = input("You: ")
