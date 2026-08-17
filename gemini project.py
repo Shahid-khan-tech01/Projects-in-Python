@@ -1,10 +1,7 @@
-import os
-from dotenv import load_dotenv
 from google import genai
+from google.genai.types import GenerateContentResponse
 
-load_dotenv()
-api_key = os.getenv("key")
-client = genai.Client(api_key=api_key)
+client = genai.Client(api_key="AQ.Ab8RN6Jt7-uoRDTFNaWRFdm85n8_ZHe405Ko0duhsThLHErvjA")
 
 while True:
     question = input("You: ")
@@ -12,5 +9,5 @@ while True:
     if question.lower() == "exit":
         break
 
-    response = client.models.generate_content(model="gemini-3.6-flash",contents=question)
+    response: GenerateContentResponse = client.models.generate_content(model="gemini-3.6-flash",contents=question)
     print("Gemini:",response.text)
